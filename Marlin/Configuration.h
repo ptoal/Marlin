@@ -141,7 +141,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define BOARD_BTT_SKR_V1_4_TURBO
+  #define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -563,9 +563,9 @@
     #define DEFAULT_Ki_LIST {   1.50,   1.50 }
     #define DEFAULT_Kd_LIST { 102.90, 102.90 }
   #else
-    #define DEFAULT_Kp  24.87
-    #define DEFAULT_Ki   1.50
-    #define DEFAULT_Kd 102.90
+    #define DEFAULT_Kp 34.48
+    #define DEFAULT_Ki 2.74
+    #define DEFAULT_Kd 108.49
   #endif
 #endif // PIDTEMP
 
@@ -2304,7 +2304,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
 // K.3D Full Graphic Smart Controller
