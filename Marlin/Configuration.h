@@ -141,7 +141,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO
+  #define BOARD_BTT_SKR_V1_4_TURBO
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -597,23 +597,15 @@
                                   // Set/get with gcode: M301 E[extruder number, 0-2]
 
   #if ENABLED(PID_PARAMS_PER_HOTEND)
-<<<<<<< HEAD
-    // Specify between 1 and HOTENDS values per array.
-    // If fewer than EXTRUDER values are provided, the last element will be repeated.
-    #define DEFAULT_Kp_LIST {  24.87,  24.87 }
-    #define DEFAULT_Ki_LIST {   1.50,   1.50 }
-    #define DEFAULT_Kd_LIST { 102.90, 102.90 }
-=======
     // Specify up to one value per hotend here, according to your setup.
     // If there are fewer values, the last one applies to the remaining hotends.
     #define DEFAULT_Kp_LIST {  22.20,  22.20 }
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
->>>>>>> e1056378f1 (📝 Update PID_PARAMS_PER_HOTEND comment (#22694))
   #else
-     #define DEFAULT_Kp 35.17
-     #define DEFAULT_Ki 2.66
-     #define DEFAULT_Kd 116.13
+    #define DEFAULT_Kp  24.87
+    #define DEFAULT_Ki   1.50
+    #define DEFAULT_Kd 102.90
   #endif
 #endif // PIDTEMP
 
@@ -2978,6 +2970,3 @@
 
 // Edit servo angles with M281 and save to EEPROM with M500
 //#define EDITABLE_SERVO_ANGLES
-
-// Disable servo with M282 to reduce power consumption, noise, and heat when not in use
-//#define SERVO_DETACH_GCODE
