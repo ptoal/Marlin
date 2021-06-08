@@ -141,7 +141,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define BOARD_BTT_SKR_V1_4_TURBO
+  #define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -603,9 +603,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  24.87
-    #define DEFAULT_Ki   1.50
-    #define DEFAULT_Kd 102.90
+    #define DEFAULT_Kp 34.48
+    #define DEFAULT_Ki 2.74
+    #define DEFAULT_Kd 108.49
   #endif
 #endif // PIDTEMP
 
