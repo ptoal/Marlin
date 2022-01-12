@@ -603,9 +603,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-     #define DEFAULT_Kp 35.17
-     #define DEFAULT_Ki 2.66
-     #define DEFAULT_Kd 116.13
+     #define DEFAULT_Kp 25.01
+     #define DEFAULT_Ki 2.03
+     #define DEFAULT_Kd 76.98
   #endif
 #endif // PIDTEMP
 
@@ -843,7 +843,7 @@
 #define I_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 #define J_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 #define K_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
-#define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe.
+#define Z_MIN_PROBE_ENDSTOP_INVERTING false // Set to true to invert the logic of the probe.
 
 /**
  * Stepper Drivers
@@ -1085,11 +1085,12 @@
  */
 #define Z_PROBE_SERVO_NR 0       // Defaults to SERVO 0 connector.
 #define Z_SERVO_ANGLES { 10, 90 } // Z Servo Deploy and Stow angles
-#define Z_MIN_PROBE_ENDSTOP_INVERTING true
+#define Z_MIN_PROBE_ENDSTOP_INVERTING false
+
 /**
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
  */
-// #define BLTOUCH
+#define BLTOUCH
 
 /**
  * Touch-MI Probe by hotends.fr
@@ -1181,7 +1182,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -31, -47, -1.6 }
+#define NOZZLE_TO_PROBE_OFFSET { -31, -47, -2.40 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
